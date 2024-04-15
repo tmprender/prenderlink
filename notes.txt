@@ -1,0 +1,5 @@
+# run this command to start server locally
+# exposing 443 in container and mapping to 8080 on host
+
+docker run -p 8080:443 prenderlink-webserver
+
