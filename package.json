@@ -1,0 +1,26 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remark": "^15.0.0",
+    "remark-html": "^15.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.8.1",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "latest",
+    "typescript": "^5.4.2"
+  }
+}
