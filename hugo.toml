@@ -1,0 +1,8 @@
+baseURL = 'https://prenderlink.net/'
+languageCode = 'en-us'
+title = 'Prenderlink'
+theme = "ananke"
+
+# Enable comments (optional)
+[params]
+  disqusShortname = "your-disqus-name"
