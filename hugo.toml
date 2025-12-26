@@ -1,8 +1,20 @@
-baseURL = 'https://prenderlink.net/'
+baseURL = 'https://www.prenderlink.net/'
 languageCode = 'en-us'
 title = 'Prenderlink'
-theme = "ananke"
+theme = "archie"
 
-# Enable comments (optional)
 [params]
-  disqusShortname = "your-disqus-name"
+  subtitle = "Hello! I sometimes write articles or make videos about something cool I've learned and want to share. Stay tuned!"
+
+# Menu
+[menu]
+  main = [
+    
+    { name = "Blogs", url = "/blog/" },
+    { name = "About", url = "/about/" },  
+    
+  ]
+
+# Github Pages
+[deployments]
+  githubPages = { enabled = true }
