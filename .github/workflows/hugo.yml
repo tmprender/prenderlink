@@ -6,15 +6,14 @@ on:
   push:
     branches: ["main"]
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Manual trigger
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Read repo contents
 permissions:
   contents: read
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Only one Pages deployment at a time; don't cancel in-progress runs
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -32,16 +31,16 @@ jobs:
       HUGO_VERSION: 0.128.0
     steps:
       - name: Checkout
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+        uses: actions/checkout@v4
         with:
           submodules: recursive
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b
+        uses: actions/configure-pages@v5
 
       - name: Install Hugo (action)
-        uses: peaceiris/actions-hugo@19661a5c56c987b713f1f00f022671286b04f53b
+        uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
@@ -56,7 +55,7 @@ jobs:
             --baseURL "https://www.prenderlink.net/"
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 
@@ -74,4 +73,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@f33f41b675f0ab2dc5a6863c9a170fe83af3571e
+        uses: actions/deploy-pages@v4
