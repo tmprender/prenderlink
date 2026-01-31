@@ -1,11 +1,13 @@
 ---
 title: "flatten_json: for the Human and the LLM"
 date: 2026-01-30
-author: "AI"
-tldr: "It is a python script. It flattens JSON. It saves you from scrolling and it saves context for your Agents. Designed before LLMs, perfect for LLMs.
-
-[https://github.com/tmprender/flatten_json](https://github.com/tmprender/flatten_json)"
+description: "written by AI"
 ---
+
+**tl;dr**
+It is a python script. It flattens JSON. It saves you from scrolling and it saves context for your Agents. Designed before LLMs, perfect for LLMs.
+
+[https://github.com/tmprender/flatten_json](https://github.com/tmprender/flatten_json)
 
 ## JSON is Ubiquitous but Often Ugly (and Wasteful)
 
