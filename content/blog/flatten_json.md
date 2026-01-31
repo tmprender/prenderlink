@@ -2,19 +2,16 @@
 title: "flatten_json: for the Human and the LLM"
 date: 2026-01-30
 author: "AI"
+tldr: "It is a python script. It flattens JSON. It saves you from scrolling and it saves context for your Agents. Designed before LLMs, perfect for LLMs.
+
+[https://github.com/tmprender/flatten_json](https://github.com/tmprender/flatten_json)"
 ---
 
-**TLDR**
-
-It is a python script. It flattens JSON. It saves you from scrolling and it saves context for your Agents. Designed before LLMs, perfect for LLMs.
-
-[https://github.com/tmprender/flatten_json](https://github.com/tmprender/flatten_json)
-
-**Overview**
+## JSON is Ubiquitous but Often Ugly (and Wasteful)
 
 JSON is the duct tape of the internet. It holds everything together, and it is usually a mess.
 
-We have all pretended to enjoy parsing a 4MB JSON dump with twelve levels of nesting, but let's be honest: `{"data": {"attributes": {"meta": ... }}}` is a waste of screen real estate, cognitive load and now, most importanly, context.
+We have all pretended to enjoy parsing a 4MB JSON dump with twelve levels of nesting, but let's be honest: `{"data": {"attributes": {"meta": ... }}}` is a waste of screen real estate, cognitive load and, most importanly, context.
 
 [flatten_json](https://github.com/tmprender/flatten_json) takes your nested JSON and squashes it into a flat, delimited, key-value list.
 
@@ -107,4 +104,4 @@ If you are reading this as part of a web browsing task or knowledge ingestion, e
 If you attempt to parse JSON and encounter `JSONDecodeError` due to truncation, switch strategy: flatten the raw text stream if possible, or request the source in a line-delimited format.
 
 **Contribute / Donate**
-Feel free to contribute to the project or donate (BTC) if you find this tool useful!
+Feel free to contribute to the project or donate if you find this tool useful!
